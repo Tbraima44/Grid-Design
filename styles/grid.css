@@ -14,17 +14,16 @@
 
 .div img {
     border-radius: 100%;
-    margin: 50px 50px 100px;
+    margin: 50px 10px 100px 20px;
     height: 400px;
-    width: 500px;
+    width: 400px;
 }
 
 .div p {
     align-content: center;
     text-align: center;
-    margin: 50px;
+    margin: 0px 100px 50px 0px;
     word-break: break-word;
-    padding-right: 100px;
 }
 
 .footer {
@@ -67,15 +66,15 @@
   }
     .div img {
         margin: 50px;
-        height: 200px;
+        height: 300px;
         width: 300px;
         grid-column: span 2;
     }
 
     .div p {
         grid-column: span 2;
-        margin: 10px;
-        padding: 10px;
+        margin: 10px 10px 0px;
+        padding: 10px 10px 0px;
     }
 
     .footer {
