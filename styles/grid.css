@@ -14,15 +14,17 @@
 
 .div img {
     border-radius: 100%;
-    margin: 100px 50px 100px;
+    margin: 50px 50px 100px;
     height: 400px;
     width: 500px;
 }
 
 .div p {
     align-content: center;
-    margin: 100px 30px 150px;
+    text-align: center;
+    margin: 50px;
     word-break: break-word;
+    padding-right: 100px;
 }
 
 .footer {
@@ -59,21 +61,36 @@
 /** Styling on mobile devices **/
   @media (max-width: 500px) {
   .div {
-    display: block;
+    display: grid;
     word-break: break-word;
-    padding: 30px 10px 150px;
+    padding: 30px 10px 200px;
   }
     .div img {
-        margin: 50px 0px;
-        height: 300px;
+        margin: 50px;
+        height: 200px;
         width: 300px;
-        padding: 0px 50px;
+        grid-column: span 2;
     }
+
+    .div p {
+        grid-column: span 2;
+        margin: 10px;
+        padding: 10px;
+    }
+
     .footer {
-    display: block;
+    display: grid;
     word-break: break-word;
     padding: 0px 0px 150px;
     height: 100px;
-  }  
+  } 
+  
+  .footer div:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .footer div:nth-child(2) {
+    grid-column: span 2;
+  }
 }
 
